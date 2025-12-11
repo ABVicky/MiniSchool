@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Glassmorphism utilities */
+.glass {
+  @apply bg-white/40 backdrop-blur-md border border-white/50 shadow-soft;
+}
+
+/* Neumorphism soft card */
+.neu {
+  background: #f3f8ff;
+  box-shadow: 8px 8px 20px rgba(26,115,232,0.08), -8px -8px 20px #fff;
+  border-radius: 20px;
+}
+
+/* Premium gradient accent */
+.premium-gradient {
+  background: linear-gradient(135deg, #1A73E8 0%, #3a8ef1 40%, #FFB800 100%);
+}
+
+/* Floating animation */
+.float-slow {
+  animation: float 6s ease-in-out infinite;
+}
+.float-fast {
+  animation: float 3.5s ease-in-out infinite;
+}
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Typographic polish */
+.h1-modern { @apply text-4xl md:text-6xl font-extrabold tracking-tight text-primary; }
+.h2-modern { @apply text-2xl md:text-4xl font-bold text-slate-900; }
+.subtext   { @apply text-slate-600 md:text-lg; }
+
+/* Button styles */
+.btn {
+  @apply inline-flex items-center gap-2 px-5 py-3 rounded-xl font-semibold transition;
+}
+.btn-primary {
+  @apply btn text-white bg-primary shadow-glow hover:brightness-110;
+}
+.btn-secondary {
+  @apply btn text-primary bg-white/60 backdrop-blur-md border border-white/50 hover:bg-white/80;
+}
+
+/* Underline hover for nav links */
+.nav-link {
+  @apply relative inline-block px-4 py-2 text-slate-800 font-medium;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  bottom: 0;
+  height: 2px;
+  background: #1A73E8;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 250ms ease;
+}
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
