@@ -31,9 +31,9 @@ export const courses = [
 ];
 
 export const testimonials = [
-  { name: "Aarav (Class 9)", role: "Student", quote: "My concepts finally make sense. Scored my highest ever!", img: "/src/assets/gallery/student1.jpg" },
-  { name: "Neha (Parent)", role: "Parent", quote: "Structured guidance and safe environment. Highly recommended.", img: "/src/assets/gallery/parent1.jpg" },
-  { name: "Riya (Class 7)", role: "Student", quote: "Learning feels fun and futuristic.", img: "/src/assets/gallery/student2.jpg" }
+  { name: "Aarav (Class 9)", role: "Student", quote: "My concepts finally make sense. Scored my highest ever!", img: "/assets/gallery/parent1.png" },
+  { name: "Neha (Parent)", role: "Parent", quote: "Structured guidance and safe environment. Highly recommended.", img: "/assets/gallery/parent1.png" },
+  { name: "Riya (Class 7)", role: "Student", quote: "Learning feels fun and futuristic.", img: "/assets/gallery/parent1.png" }
 ];
 
 export const gallery = [
