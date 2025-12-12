@@ -6,11 +6,11 @@ import TestimonialCard from "../components/TestimonialCard";
 import SmartSlider from "../components/SmartSlider";
 import Timeline from "../components/Timeline";
 import { stats, whyMini, testimonials } from "../data/sampleData";
-import { Link } from "react-router-dom";
-
-
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Home() {
+  const navigate = useNavigate(); // ✅ useNavigate inside component
+
   return (
     <div className="space-y-16">
       {/* Hero */}
@@ -27,10 +27,26 @@ export default function Home() {
               <p className="subtext mt-4">
                 Premium Private Tuitions for Class 3–10 with Smart Classroom Experience.
               </p>
+
               <div className="mt-6 flex gap-3">
-                <Button>Enroll Now</Button>
-                <Button variant="secondary">Explore Courses</Button>
+                {/* Call button */}
+                <Button
+                  variant="secondary"
+                  onClick={() => window.location.href = "tel:+918337054112"}
+                >
+                  Call Now
+                </Button>
+
+
+                {/* Navigate to courses page */}
+                <Button
+                  variant="primary"
+                  onClick={() => navigate("/courses")}
+                >
+                  Explore Courses
+                </Button>
               </div>
+
               <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
                 {stats.map((s, i) => (
                   <AnimatedWrapper key={s.label} delay={i * 0.1}>
@@ -39,20 +55,21 @@ export default function Home() {
                 ))}
               </div>
             </div>
+
+            {/* Floating icons with clickable background */}
             <Link to="/contact">
-              <div className="relative">
+              <div className="relative cursor-pointer">
                 <img
                   src="/assets/gallery/1.jpg"
                   alt="bg"
                   className="absolute inset-0 w-full border-4 border-black/40 h-full object-cover rounded-[12px] pointer-events-none"
                 />
-                {/* Floating educational icons */}
                 <motion.div className="float-fast absolute top-6 left-6 glass rounded-2xl p-4">📚</motion.div>
                 <motion.div className="float-slow absolute top-24 right-8 glass rounded-2xl p-4">🧪</motion.div>
                 <motion.div className="float-fast absolute bottom-10 left-12 glass rounded-2xl p-4">🧠</motion.div>
                 <div className="neu h-72 md:h-96" />
               </div>
-            </Link>  
+            </Link>
           </div>
         </motion.div>
       </section>
