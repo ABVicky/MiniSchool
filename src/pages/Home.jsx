@@ -6,6 +6,9 @@ import TestimonialCard from "../components/TestimonialCard";
 import SmartSlider from "../components/SmartSlider";
 import Timeline from "../components/Timeline";
 import { stats, whyMini, testimonials } from "../data/sampleData";
+import { Link } from "react-router-dom";
+
+
 
 export default function Home() {
   return (
@@ -36,13 +39,20 @@ export default function Home() {
                 ))}
               </div>
             </div>
-            <div className="relative">
-              {/* Floating educational icons */}
-              <motion.div className="float-fast absolute top-6 left-6 glass rounded-2xl p-4">📚</motion.div>
-              <motion.div className="float-slow absolute top-24 right-8 glass rounded-2xl p-4">🧪</motion.div>
-              <motion.div className="float-fast absolute bottom-10 left-12 glass rounded-2xl p-4">🧠</motion.div>
-              <div className="neu h-72 md:h-96" />
-            </div>
+            <Link to="/contact">
+              <div className="relative">
+                <img
+                  src="/assets/gallery/1.jpg"
+                  alt="bg"
+                  className="absolute inset-0 w-full border-4 border-black/40 h-full object-cover rounded-[12px] pointer-events-none"
+                />
+                {/* Floating educational icons */}
+                <motion.div className="float-fast absolute top-6 left-6 glass rounded-2xl p-4">📚</motion.div>
+                <motion.div className="float-slow absolute top-24 right-8 glass rounded-2xl p-4">🧪</motion.div>
+                <motion.div className="float-fast absolute bottom-10 left-12 glass rounded-2xl p-4">🧠</motion.div>
+                <div className="neu h-72 md:h-96" />
+              </div>
+            </Link>  
           </div>
         </motion.div>
       </section>

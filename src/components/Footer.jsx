@@ -18,8 +18,8 @@ export default function Footer() {
           </div>
           <div>
             <h4 className="font-bold text-slate-900">Contact</h4>
-            <p className="mt-2 text-slate-700">Thakurpukur Mahestala, WB</p>
-            <p className="text-slate-700">info@minischool.edu</p>
+            <p className="mt-2 text-slate-700">Rania, Aurbindo Nagar - Kolkata, WB</p>
+            <p className="text-slate-700">minischool4923@gmail.com</p>
           </div>
         </div>
         <div className="mt-6 text-center text-slate-500 text-sm">© {new Date().getFullYear()} MINI SCHOOL. All rights reserved.</div>

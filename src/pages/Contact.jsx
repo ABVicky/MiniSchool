@@ -39,8 +39,23 @@ export default function Contact() {
           <div className="space-y-4">
             <div className="glass rounded-2xl p-5">
               <h4 className="font-bold text-slate-900">Address</h4>
-              <p className="text-slate-700">Thakurpukur Mahestala, WB, India</p>
+              <p className="text-slate-700">Rania Mauza, Aurobindo Nagar - Kolkata, WB</p>
             </div>
+
+            {/* Google Map */}
+            <div className="rounded-2xl border border-slate-300 shadow-md p-1 bg-white">
+              <iframe
+                src="https://www.google.com/maps?q=Rania+Mauza&hl=en&z=16&t=k&output=embed"
+                width="100%"
+                height="300"
+                className="rounded-xl"
+                style={{ border: 0 }}
+                loading="lazy"
+                allowFullScreen=""
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
+
           </div>
         </AnimatedWrapper>
       </div>
