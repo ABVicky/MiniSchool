@@ -12,13 +12,13 @@ export const whyMini = [
 ];
 
 export const facilities = [
-  { title: "CCTV Surveillance", icon: "🎥", img: "/src/assets/gallery/cctv.jpg" },
-  { title: "Whiteboard Classroom", icon: "🧑‍🏫", img: "/src/assets/gallery/whiteboard.jpg" },
-  { title: "Individual Seating", icon: "🪑", img: "/src/assets/gallery/seating.jpg" },
-  { title: "Writing Pad Chairs", icon: "✍️", img: "/src/assets/gallery/padchairs.jpg" },
-  { title: "Smart LED Panel", icon: "🖥️", img: "/src/assets/gallery/ledpanel.jpg" },
-  { title: "Projector", icon: "📽️", img: "/src/assets/gallery/projector.jpg" },
-  { title: "Clean Environment", icon: "🌿", img: "/src/assets/gallery/clean.jpg" }
+  { title: "CCTV Surveillance", icon: "🎥", img: "/assets/gallery/cctv.jpg" },
+  { title: "Whiteboard Classroom", icon: "🧑‍🏫", img: "/assets/gallery/whiteboard.jpg" },
+  { title: "Individual Seating", icon: "🪑", img: "/assets/gallery/seating.jpg" },
+  { title: "Writing Pad Chairs", icon: "✍️", img: "/assets/gallery/padchairs.jpg" },
+  { title: "Smart LED Panel", icon: "🖥️", img: "/assets/gallery/ledpanel.jpg" },
+  { title: "Projector", icon: "📽️", img: "/assets/gallery/projector.jpg" },
+  { title: "Clean Environment", icon: "🌿", img: "/assets/gallery/clean.jpg" }
 ];
 
 export const courses = [

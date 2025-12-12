@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
-import Logo from '../assets/icons/logo.jpg';
+import Logo from '/assets/icons/logo.jpg';
 
 const links = [
   { to: "/", label: "Home" },
