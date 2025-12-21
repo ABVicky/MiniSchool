@@ -23,28 +23,38 @@ export default function Home() {
         >
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h1 className="h1-modern">Smart Learning. Smarter Future.</h1>
+              <h1 className="h1-modern">Register for. MathQuest.</h1>
               <p className="subtext mt-4">
-                Premium Private Tuitions for Class 3–10 with Smart Classroom Experience.
+                🧠✨ <b>MathQuest</b> is a fun challenge that sharpens maths aptitude, logic, and problem-solving skills. 🚀➗
               </p>
 
               <div className="mt-6 flex gap-3">
                 {/* Call button */}
                 <Button
                   variant="secondary"
-                  onClick={() => window.location.href = "tel:+918337054112"}
+                  onClick={() => window.location.href = "tel:+918240934380"}
                 >
                   Call Now
                 </Button>
 
 
                 {/* Navigate to courses page */}
-                <Button
-                  variant="primary"
+                {/* <Button
+                  variant="secondary"
                   onClick={() => navigate("/courses")}
                 >
-                  Explore Courses
-                </Button>
+                  Register for MathQuest
+                </Button> */}
+                <a
+                  href="https://forms.gle/YGyth438wXqtWFo99"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button variant="secondary">
+                    Register for MathQuest
+                  </Button>
+                </a>
+
               </div>
 
               <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -60,7 +70,7 @@ export default function Home() {
             <Link to="/contact">
               <div className="relative cursor-pointer">
                 <img
-                  src="/assets/gallery/1.jpg"
+                  src="/assets/gallery/whiteboard1.png"
                   alt="bg"
                   className="absolute inset-0 w-full border-4 border-black/40 h-full object-cover rounded-[12px] pointer-events-none"
                 />
@@ -77,7 +87,7 @@ export default function Home() {
       {/* Why MINI SCHOOL */}
       <section className="max-w-7xl mx-auto px-6">
         <AnimatedWrapper>
-          <h2 className="h2-modern">Why MINI SCHOOL</h2>
+          <h2 className="h2-modern">Why MS Coaching Center</h2>
         </AnimatedWrapper>
         <div className="mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {whyMini.map((item, i) => (

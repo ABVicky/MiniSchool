@@ -26,7 +26,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
           <img src={Logo} alt="Mini School Logo" className="w-10 h-8 rounded premium-gradient shadow-glow" />
-          <span className="font-extrabold text-slate-900">MINI SCHOOL</span>
+          <span className="font-extrabold text-slate-900">MS Coaching Center</span>
         </Link>
 
         {/* Desktop Links */}
