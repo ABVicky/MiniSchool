@@ -25,7 +25,7 @@ export default function Home() {
             <div>
               <h1 className="h1-modern">Register for. MathQuest.</h1>
               <p className="subtext mt-4">
-                🧠✨ <b>MathQuest</b> is a fun challenge that sharpens maths aptitude, logic, and problem-solving skills. 🚀➗
+                <b>MathQuest</b> is a fun challenge on <b>28th Dec, 2025</b> that sharpens maths aptitude, logic, and problem-solving skills. 🚀➗
               </p>
 
               <div className="mt-6 flex gap-3">
