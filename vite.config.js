@@ -7,6 +7,10 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: "autoUpdate",
+      includeAssets: [
+        "icons/icon-192.png",
+        "icons/icon-512.png"
+      ],
       workbox: {
         runtimeCaching: [
           {
@@ -30,9 +34,20 @@ export default defineConfig({
         display: "standalone",
         icons: [
           {
-            src: "/icon.png",
+            src: "/icons/MS_Logo.png",
             sizes: "192x192",
-            type: "/assets/gallery/MS_Logo.png"
+            type: "image/png"
+          },
+          {
+            src: "/icons/MS_Logo.png",
+            sizes: "512x512",
+            type: "image/png"
+          },
+          {
+            src: "/icons/MS_Logo.png",
+            sizes: "512x512",
+            type: "image/png",
+            purpose: "maskable"
           }
         ]
       }
