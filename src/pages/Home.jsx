@@ -23,9 +23,9 @@ export default function Home() {
         >
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h1 className="h1-modern">Register for. MathQuest.</h1>
+              <h1 className="h1-modern">MS Coaching <br/> Center</h1>
               <p className="subtext mt-4">
-                <b>MathQuest</b> is a fun challenge on <b>28th Dec, 2025</b> that sharpens maths aptitude, logic, and problem-solving skills. 🚀➗
+                <b>MiniSchool</b> Coaching Center is one of the best <b>coaching</b> Center in <br /> Rania, Bansdhroni - Kolkata. 🚀➗
               </p>
 
               <div className="mt-6 flex gap-3">
@@ -39,13 +39,13 @@ export default function Home() {
 
 
                 {/* Navigate to courses page */}
-                {/* <Button
-                  variant="secondary"
+                <Button
+                  variant="primary"
                   onClick={() => navigate("/courses")}
                 >
-                  Register for MathQuest
-                </Button> */}
-                <a
+                  Explore Courses
+                </Button>
+                {/* <a
                   href="https://forms.gle/YGyth438wXqtWFo99"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -53,7 +53,7 @@ export default function Home() {
                   <Button variant="secondary">
                     Register for MathQuest
                   </Button>
-                </a>
+                </a> */}
 
               </div>
 
@@ -70,7 +70,7 @@ export default function Home() {
             <Link to="/contact">
               <div className="relative cursor-pointer">
                 <img
-                  src="/assets/gallery/whiteboard1.png"
+                  src="/assets/gallery/whiteboard.jpg"
                   alt="bg"
                   className="absolute inset-0 w-full border-4 border-black/40 h-full object-cover rounded-[12px] pointer-events-none"
                 />

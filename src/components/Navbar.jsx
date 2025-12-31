@@ -5,11 +5,12 @@ import Logo from '/assets/icons/logo.jpg';
 
 const links = [
   { to: "/", label: "Home" },
-  { to: "/about", label: "About" },
+  { to: "/notices", label: "Notices" },
+  // { to: "/about", label: "About" },
   { to: "/courses", label: "Courses" },
   { to: "/facilities", label: "Facilities" },
   { to: "/gallery", label: "Gallery" },
-  { to: "/contact", label: "Contact" }
+  { to: "/contact", label: "Contact" },
 ];
 
 export default function Navbar() {
@@ -26,7 +27,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
           <img src={Logo} alt="Mini School Logo" className="w-10 h-8 rounded premium-gradient shadow-glow" />
-          <span className="font-extrabold text-slate-900">MS Coaching Center</span>
+          <span className="font-extrabold text-slate-900">MiniSchool</span>
         </Link>
 
         {/* Desktop Links */}

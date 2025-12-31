@@ -7,6 +7,7 @@ import Courses from "./pages/Courses.jsx";
 import Facilities from "./pages/Facilities.jsx";
 import Gallery from "./pages/Gallery.jsx";
 import Contact from "./pages/Contact.jsx";
+import Notices from "./pages/Notices.jsx";
 
 export default function App() {
   return (
@@ -15,11 +16,12 @@ export default function App() {
       <main className="pt-20">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          {/* <Route path="/about" element={<About />} /> */}
           <Route path="/courses" element={<Courses />} />
           <Route path="/facilities" element={<Facilities />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/notices" element={<Notices />} />
         </Routes>
       </main>
       <Footer />
